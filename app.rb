@@ -18,6 +18,10 @@ class App < Sinatra::Base
     redirect to('/')
   end
 
+  get "/team" do
+    erb :team
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
