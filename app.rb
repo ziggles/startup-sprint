@@ -6,6 +6,10 @@ class App < Sinatra::Base
     erb :home
   end
 
+  get '/rainbow' do
+    erb :rainbow
+  end
+
   get '/home' do
     redirect to('/')
   end
@@ -21,7 +25,7 @@ class App < Sinatra::Base
 
     erb :subscribe
   end
-  
+
   get '/reddit' do
     # TODO: we can probably get the listings with something like:
     # JSON.parse(RestClient.get('http://reddit.com/.json'))
