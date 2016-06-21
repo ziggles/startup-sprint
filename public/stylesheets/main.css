@@ -100,20 +100,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.reddit-title {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
 
+.listing-container {
+    padding: 10px 20px;
+    border-bottom: 1px solid #D6D5DB;
+}
 
+.listing-container a.link {
+    color: #214786;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.listing-container .meta {
+    font-size: 12px;
+    color: #76767B;
+    font-family: sans-serif;
+}
 
 
 /* ==========================================================================
