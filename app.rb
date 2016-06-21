@@ -13,6 +13,7 @@ class App < Sinatra::Base
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
+    @city = params[:city]
 
     if !@email.match(/.+@.+/)
       redirect to('/?error=email')
@@ -20,7 +21,7 @@ class App < Sinatra::Base
 
     erb :subscribe
   end
-
+  
   get '/reddit' do
     # TODO: we can probably get the listings with something like:
     # JSON.parse(RestClient.get('http://reddit.com/.json'))
