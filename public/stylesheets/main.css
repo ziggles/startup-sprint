@@ -156,7 +156,11 @@ textarea {
     visibility: hidden;
 }
 
-/*
+.column {
+  column-count: 2;
+}
+
+/*cd s
  * Clearfix: contain floats
  *
  * For modern browsers
