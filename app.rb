@@ -10,6 +10,10 @@ class App < Sinatra::Base
     erb :rainbow
   end
 
+  get '/youtube' do
+    erb :youtube
+  end
+
   get '/home' do
     redirect to('/')
   end
