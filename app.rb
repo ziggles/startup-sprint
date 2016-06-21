@@ -8,8 +8,16 @@ class App < Sinatra::Base
     erb :home
   end
 
+  get '/rainbow' do
+    erb :rainbow
+  end
+
   get '/home' do
     redirect to('/')
+  end
+
+  get "/team" do
+    erb :team
   end
 
   post '/subscribe' do
