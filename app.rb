@@ -12,12 +12,20 @@ class App < Sinatra::Base
     erb :rainbow
   end
 
+  get '/youtube' do
+    erb :youtube
+  end
+
   get '/home' do
     redirect to('/')
   end
 
   get "/team" do
     erb :team
+  end
+
+  get "/splashpage" do
+    erb :splashpage
   end
 
   post '/subscribe' do
